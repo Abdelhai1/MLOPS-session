@@ -1,0 +1,6 @@
+start with installing all dependencies with:
+pip install -r requirements.txt
+start the frontend:
+run python file
+start the backend:
+python backend.py

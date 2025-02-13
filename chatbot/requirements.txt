@@ -1,0 +1,6 @@
+# Backend Dependencies
+fastapi
+uvicorn
+requests
+pydantic
+openai
