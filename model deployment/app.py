@@ -11,7 +11,7 @@ model = joblib.load("regression_model.pkl")
 
 # Define a Pydantic model for input validation
 class PredictionInput(BaseModel):
-    feature1: int
+    feature1: float
     feature2: float
     feature3: float
     feature4: float

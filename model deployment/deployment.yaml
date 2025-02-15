@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: regression-api
+spec:
+  replicas: 3  # Number of pods to run
+  selector:
+    matchLabels:
+      app: regression-api
+  template:
+    metadata:
+      labels:
+        app: regression-api
+    spec:
+      containers:
+      - name: regression-api
+        image: regression-api    # Docker image name
+        imagePullPolicy: IfNotPresent  
+        ports:
+        - containerPort: 80  # Port exposed by the container

@@ -1,6 +1,7 @@
 numpy
 pandas
 matplotlib
+uvicorn
 seaborn
 scikit-learn
 fastapi
